@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/***************Start section 1 header********************/
+.header{
+    width: 100%;
+    height: 750px;
+    background: url(../imgs/1.jpeg);
+    background-size: cover;
+    position: relative;
+}
+.header .lamp-img{
+   position: absolute;
+    width: 150px;
+    top: 4%;
+    left: 10%;
+}
+.header .title-head{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 67%;
+}
+h1{
+    color: hotpink;
+}
+.header .title-head p{
+    padding: 10px 0;
+}
+button{
+    padding: 5px 15px;
+    border: 2px solid hotpink;
+    cursor: pointer;
+}
+.header #img-menu{
+    position: fixed;
+    right: 3%;
+    top: 4%;
+    width: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+.header #menu{
+    padding-top: 100px;
+    width: 260px;
+    position: fixed;
+    align-items:center;
+    right: 0;
+    height: 100%;
+    background-color: lightpink;
+    display: none;
+    text-align: center;
+} 
+.header #menu a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+/******************************End of section 1 header**************/
+/******************************Start of section 2 **************/
+.body1{
+    text-align: center;
+    margin: 10% 0;
+}
+.body1 hr{
+    width: 75px;
+    margin: 10px auto;
+    height: 3px;
+    background-color: #9b5151;
+    border: none;
+}
+.body1 .services{
+    display: flex;
+    justify-content: space-around;
+}
+.body1 .services .ser{
+    flex-basis: 25%; 
+}
+.body1 .services .ser h2{
+    color:darkturquoise;
+    padding: 10px 0;
+}
+/******************************End of section 2 **************/
+/******************************Start of section 3 **************/
+.body2{
+   display: flex;
+    padding: 7% 0;
+}
+.body2 img{
+    width: 750px;
+    object-fit: cover;
+}
+.body2 #About{
+    text-align: end;
+    padding: 15% 10% 0 0;
+}
+.body2 #About hr{
+    width: 60px;
+    height: 2px;
+    background-color: #9b5151;
+    margin: 8px 88%;
+    border: none;
+}
+.body2 #About p{
+    padding: 10px 0;
+}
+.body2 #About h3{
+    padding-bottom: 15px;
+    font-style: italic;
+}
+/******************************End of section 3 **************/
+/******************************Start of footer **************/
+#contact{
+    display: flex;
+    justify-content: space-around;
+    background: #fcd1d1;
+    padding-top: 3%;
+    border-radius: 170px 0px;
+}
+#contact .contact-img{
+    width: 400px;
+    object-fit: cover;
+}
+#contact .fot-contact div{
+    padding: 10px;
+}
+#contact .fot-contact div a{
+    text-decoration: none;
+    color: #23689b;
+}
+#contact .fot-contact div img{
+    cursor: pointer;
+}
+/*****************************End of footer **************/
+
+@media screen and (max-width: 700px){
+    .header #menu{
+        width: 90px;
+    }
+    .header{
+        height: 500px;
+    }
+    .header .lamp-img{
+        left: 30%;
+        top: 8%;
+    }
+    .header .title-head{
+        right: 22%;
+    }
+    .body1 .services, .body2, #contact{
+        flex-direction: column;
+        padding: 0 10%;
+    }
+    .body2{
+        padding-left: 0;
+    }
+    .body2 img{
+        width: 400px;
+    }
+    .body2 #About hr{
+        margin: 8px 83%;
+    }
+    #contact{
+        margin-top: 10%;
+    }
+    #contact .fot-contact div, #contact h1{
+        text-align: center;
+        margin: 6%;
+}
+}

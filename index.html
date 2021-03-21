@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!--***************Start of section 1 header********************-->
+        <section class="header">
+            <img src="imgs/pic-1.png" class="lamp-img">
+            <div class="title-head">
+                <h1>Web Design</h1>
+                <p>Learn Ipsum is simply dummy text of the printing and typesetting indudtry. Lorem Ipsum has been the indystry's standard dummy text.</p>
+                <button>Read More</button>
+            </div>
+            <img src="imgs/menu.png" id="img-menu" onclick="menuClick()">
+            <div id="menu">
+                <a href="">Home</a>
+                <a href="#About">About</a>
+                <a href="">Projects</a>
+                <a href="">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </section><!--*************End of section 1 header******************-->
+        <!--***************Start of section 2 ********************-->
+        <section class="body1">
+            <h1>Our Services</h1>
+            <hr>
+            <div class="services">
+                <div class="ser">
+                    <img src="imgs/pic-1.png">
+                    <h2>Service1</h2>
+                    <p>Learn Ipsum is simply dummy text of the printing and typesetting indudtry. Lorem Ipsum has been the indystry's standard dummy text.</p>
+                </div>
+                <div class="ser">
+                    <img src="imgs/pic-2.png">
+                    <h2>Service2</h2>
+                    <p>Learn Ipsum is simply dummy text of the printing and typesetting indudtry. Lorem Ipsum has been the indystry's standard dummy text.</p>
+                </div>
+                <div class="ser">
+                    <img src="imgs/pic-3.png">
+                    <h2>Service3</h2>
+                    <p>Learn Ipsum is simply dummy text of the printing and typesetting indudtry. Lorem Ipsum has been the indystry's standard dummy text.</p>
+                </div>
+            </div>
+        </section><!--***************End of section 2 ********************-->
+        <!--***************Start of section 3 ********************-->
+        <section class="body2">
+            <img src="imgs/about.png">
+            <div id="About">
+                <h1>About Us section</h1>
+                <hr>
+                <p>Learn Ipsum is simply dummy text of the printing and typesetting indudtry. Lorem Ipsum has been the indystry's standard dummy text.</p>
+                <h3>More About Us</h3>
+                <button>Join Us</button>
+            </div>
+        </section><!--***************End of section 3 ********************-->
+        <section id="contact">
+            <div>
+                <h1>Contact us</h1>
+                <div class="fot-contact">
+                    <div>
+                        <img src="imgs/facebook.png" align="middle">
+                        <a href="">@Facebook</a>
+                    </div>
+                    <div>
+                        <img src="imgs/instagram.png" align="middle">
+                        <a href="">@Instagram</a>
+                    </div>
+                    <div>
+                        <img src="imgs/twitter.png" align="middle">
+                        <a href="">@Twitter</a>
+                    </div>
+                    <div>
+                        <img src="imgs/linkedin.png" align="middle">
+                        <a href="">@Linkedin</a>
+                    </div>
+                </div>
+            </div>
+            <img src="imgs/contact.png" class="contact-img">
+        </section>
+        <script>
+            function menuClick(){
+                if(document.getElementById("menu").style.display=="none"){
+               document.getElementById("menu").style.display="block";
+               }else{
+                 document.getElementById("menu").style.display="none"  
+               } 
+            }
+        </script>
+    </body>
+</html>
